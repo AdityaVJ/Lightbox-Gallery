@@ -61,8 +61,7 @@ export default function Comment({
             <div
               style={{
                 fontSize: 18,
-                fontWeight: "600",
-                fontFamily: "Inter-Medium",
+                fontWeight: "700",
                 color: "#fff",
               }}
             >
@@ -71,8 +70,7 @@ export default function Comment({
             <div
               style={{
                 fontSize: 16,
-                fontWeight: "500",
-                fontFamily: "Inter-Regular",
+                fontWeight: "400",
                 color: "#fff",
                 marginTop: 10,
               }}

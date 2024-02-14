@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.MuiInputBase-root{
+    color:#fff !important;
+}
+.MuiInputBase-root input{
+    color:#fff !important;
+}
+.MuiFormLabel-root{
+    color:#fff !important;
+}
+
+.MuiOutlinedInput-root fieldset{
+    border-color: #fff !important;
+}
+
+.font{
+  font-family: Inter;
+}

@@ -144,7 +144,7 @@ Button.defaultProps = {
   variant: "contained",
   showAnimation: false,
   styles: {},
-  icon: undefined,
+  icon: null,
   disabled: false,
   borderRadius: 0,
 };

@@ -4,8 +4,9 @@ import PropTypes from "prop-types";
 import TextField from "@mui/material/TextField";
 import Comment from "../comment/Comment.jsx";
 import Button from "../button/Button.jsx";
+import "./CommentList.css";
 
-export default function CommentList({ commentTextField, showButton, onButtonClick, commentsArray }) {
+export default function CommentList({ commentTextField, onButtonClick, commentsArray }) {
   const [width, setWidth] = useState(window.innerWidth);
   const [commentsText, setCommentsText] = useState("");
 
@@ -25,58 +26,48 @@ export default function CommentList({ commentTextField, showButton, onButtonClic
     setCommentsText(commentTextField);
   }, [commentTextField]);
 
-  const defaultButtonProps = {
-    backgroundColor: null,
-    borderColor: null,
-    color: null,
-    hoverColor: null,
-    size: "medium",
-    onClick: () => console.log("clicked"),
-    label: "button",
-    iconLeft: false,
-    iconRight: false,
-    variant: "contained",
-    showAnimation: false,
-    styles: {},
-    icon: undefined,
-    disabled: false,
-    borderRadius: 0,
-  };
-
   return (
     <div
       style={{
         width: width < 431 ? "100%" : 498,
-        // height: 100,
       }}
     >
-      <div style={{ display: "flex", flexDirection: "column", width: "100%", marginLeft: "auto", marginRight: "auto" }}>
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "row",
+          width: "100%",
+          marginLeft: "auto",
+          marginRight: "auto",
+          marginBottom: 10,
+        }}
+      >
         <TextField
-          style={{ width: "80%", margin: 10 }}
+          style={{ width: "80%" }}
           id="outlined-helperText"
           label="Comment"
           onChange={(event) => setCommentsText(event.target.value)}
           defaultValue={commentsText}
         />
-        {showButton ? <Button {...defaultButtonProps} /> : null}
+        <Button label={"Post"} />
       </div>
+      <div className="font">
       {commentsArray?.map((item, index) => {
         return <Comment {...item} key={index} />;
       })}
+      </div>
     </div>
   );
 }
 
 CommentList.propTypes = {
   commentTextField: PropTypes.string,
-  showButton: PropTypes.bool,
   onButtonClick: PropTypes.func,
   commentsArray: PropTypes.array,
 };
 
 CommentList.defaultProps = {
   commentTextField: null,
-  showButton: true,
   onButtonClick: null,
   commentsArray: [
     {
