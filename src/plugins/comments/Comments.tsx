@@ -6,7 +6,7 @@ import { PluginProps, addToolbarButton, createModule, PLUGIN_COMMENTS } from "..
 import { CommentsButton } from "./CommentsButton.js";
 import { CommentsContextProvider } from "./CommentsContext.js";
 import { resolveCommentsProps } from "./props.js";
-// import CommentList from "../../components/comment-list/CommentList.jsx";
+import CommentList from "../../components/comment-list/CommentList.jsx";
 // import CommentList from "../../components";
 
 const commentArgs = {
@@ -42,7 +42,7 @@ export function Comments({ augment, addModule }) {
           slideFooter: ({ slide }) => (
             <>
               {renderFooter?.({ slide })}
-              {/* {<CommentList {...commentArgs} />} */}
+              {<CommentList {...commentArgs} />}
 
               {/* {slide.title && <Title title={slide.title} />} */}
 
