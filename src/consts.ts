@@ -7,6 +7,7 @@ export const MODULE_ROOT = "root";
 export const MODULE_TOOLBAR = "toolbar";
 
 export const PLUGIN_CAPTIONS = "captions";
+export const PLUGIN_COMMENTS = "comments";
 export const PLUGIN_COUNTER = "counter";
 export const PLUGIN_DOWNLOAD = "download";
 export const PLUGIN_FULLSCREEN = "fullscreen";

@@ -225,5 +225,9 @@
     "react lightbox",
     "react image lightbox",
     "react photo lightbox"
-  ]
+  ],
+  "dependencies": {
+    "@mui/material": "^5.15.10",
+    "prop-types": "^15.8.1"
+  }
 }
