@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
-import { Grid } from "@mui/material";
-import Comment from "../comment/Comment.js";
+// import { Grid } from "@mui/material";
 import TextField from "@mui/material/TextField";
-import Button from "../button/Button.js";
+import Comment from "../comment/Comment.jsx";
+import Button from "../button/Button.jsx";
 
 export default function CommentList({ commentTextField, showButton, onButtonClick, commentsArray }) {
   const [width, setWidth] = useState(window.innerWidth);

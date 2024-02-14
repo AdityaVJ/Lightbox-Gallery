@@ -17,7 +17,7 @@ import "../src/plugins/captions/captions.scss";
 import "../src/plugins/thumbnails/thumbnails.scss";
 
 import { advancedSlides } from "./slides.js";
-import { Comments } from "../src/plugins/comments/Comments.js";
+import { Comments } from "../src/plugins/comments/Comments.jsx";
 
 export default function App() {
   const [open, setOpen] = React.useState(false);

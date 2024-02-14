@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { Callback, PLUGIN_COMMENTS, RenderFunction } from "../../index.js";
 
-import { Comments } from "./Comments.js";
+import { Comments } from "./Comments.jsx";
 
 declare module "../../types.js" {
   // noinspection JSUnusedGlobalSymbols
